@@ -9,7 +9,11 @@ nav_btn.addEventListener('click', () => {
     nav.classList.toggle('hidden');
 });
 
-
+window.addEventListener('load', () => {
+    if(window.innerWidth >= 720) {
+        nav.classList.remove('hidden');
+    }
+});
 
 window.addEventListener('resize', () => {
     if(window.innerWidth >= 720) {
